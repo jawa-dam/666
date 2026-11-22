@@ -3,1118 +3,994 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#06070d">
-  <meta name="description" content="Challenge Genesis Engineered Interpretation with evidence. Submit a research-based refutation and follow the public GEI Challenge Scoreboard for the $6.66 prize challenge.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Challenge Genesis Engineered Interpretation with evidence, research, and reasoning. The $6.66 proposed cash award awaits — research challenge active, cash-prize eligibility not yet open.">
   <meta name="author" content="Wilbert Bouie Jr.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://jawa-dam.github.io/yalltoo/gei-challenge.html">
-  <title>Prove Wilbert Bouie Jr. Wrong — Win $6.66 | Y'all Too GEI Challenge</title>
+  <link rel="canonical" href="https://jawa-dam.github.io/666/">
+  <title>Challenge Genesis Engineered Interpretation — $6.66 Proposed Award | Y'all Too</title>
+
+  <meta property="og:title" content="Think GEI Is Wrong? Prove It. — $6.66 Proposed Award">
+  <meta property="og:description" content="Challenge Genesis Engineered Interpretation with evidence and independent review. Research challenge active.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jawa-dam.github.io/666/">
+  <meta property="og:image" content="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-yalltoo-666-9qoyhEUbsZmy89kI.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
-/* ============================================================
-   GEI CHALLENGE — SELF-CONTAINED STYLES
-   Brand palette: #2fd2ff · #3d3dea · #f310ba · #ff9df2 · #06070d
-   ============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 :root{
-  --yt-cyan:#2fd2ff;
-  --yt-indigo:#3d3dea;
-  --yt-magenta:#f310ba;
-  --yt-pink:#ff9df2;
-  --yt-charcoal:#06070d;
-  --yt-bg:#06070d;
-  --yt-surface:rgba(255,255,255,.04);
-  --yt-surface-solid:#0d1117;
-  --yt-text:#e8edf3;
-  --yt-body:#b0bdcf;
-  --yt-muted:#7a8da4;
-  --yt-line:rgba(47,210,255,.12);
-  --yt-gradient:linear-gradient(135deg,#2fd2ff 0%,#3d3dea 50%,#f310ba 100%);
-  --font-sans:'Plus Jakarta Sans',Inter,system-ui,-apple-system,sans-serif;
-  --shadow-card:0 1px 3px rgba(0,0,0,.2),0 4px 16px rgba(0,0,0,.15);
-  --shadow-raised:0 2px 8px rgba(0,0,0,.25),0 12px 32px rgba(0,0,0,.2);
-  --ease-out:cubic-bezier(.22,1,.36,1);
+  --white:#ffffff;
+  --navy:#101827;
+  --navy-light:#1e293b;
+  --text:#334155;
+  --text-muted:#64748b;
+  --border:#e2e8f0;
+  --border-light:#f1f5f9;
+  --surface:#f8fafc;
+  --surface-alt:#f1f5f9;
+  --cyan:#2fd2ff;
+  --cyan-dark:#0ea5c9;
+  --cyan-bg:rgba(47,210,255,.06);
+  --cyan-border:rgba(47,210,255,.18);
+  --indigo:#3d3dea;
+  --indigo-bg:rgba(61,61,234,.06);
+  --gold:#b8860b;
+  --gold-light:#d4a843;
+  --gold-dark:#8b6914;
+  --gold-bg:rgba(184,134,11,.06);
+  --gold-border:rgba(184,134,11,.2);
+  --success:#059669;
+  --success-bg:rgba(5,150,105,.06);
+  --danger:#dc2626;
+  --danger-bg:rgba(220,38,38,.06);
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.04);
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 2px 8px rgba(0,0,0,.04);
+  --shadow-md:0 4px 12px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04);
+  --shadow-lg:0 8px 24px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.04);
+  --radius:12px;
+  --radius-lg:16px;
+  --radius-xl:20px;
+  --ease:cubic-bezier(.22,1,.36,1);
 }
 
 html{scroll-behavior:smooth}
 body{
-  font-family:var(--font-sans);
-  background:var(--yt-bg);
-  color:var(--yt-body);
-  line-height:1.6;
+  font-family:var(--font);
+  background:var(--white);
+  color:var(--text);
+  line-height:1.7;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   overflow-x:hidden;
 }
 
-a{color:var(--yt-cyan);text-decoration:none;transition:color .2s}
-a:hover{color:#fff}
-strong{color:var(--yt-text);font-weight:700}
+a{color:var(--cyan-dark);text-decoration:none;transition:color .2s}
+a:hover{color:var(--indigo)}
+strong{color:var(--navy);font-weight:700}
 
-/* --- GRID / BLUEPRINT BACKGROUND --- */
-body::before{
-  content:"";position:fixed;inset:0;z-index:-2;
-  background-image:
-    linear-gradient(var(--grid-color,rgba(47,210,255,.04)) 1px,transparent 1px),
-    linear-gradient(90deg,var(--grid-color,rgba(47,210,255,.04)) 1px,transparent 1px);
-  background-size:60px 60px;
-  pointer-events:none;
-}
-
-/* --- WATER FLOW AMBIENT --- */
-@keyframes waterDrift{
-  0%{transform:translateX(-30%) translateY(0) rotate(-2deg);opacity:.3}
-  50%{opacity:.5}
-  100%{transform:translateX(30%) translateY(-20px) rotate(2deg);opacity:.3}
-}
-@keyframes waterDrift2{
-  0%{transform:translateX(20%) translateY(0) rotate(1deg);opacity:.2}
-  50%{opacity:.4}
-  100%{transform:translateX(-20%) translateY(15px) rotate(-1deg);opacity:.2}
-}
-.water-ambient{
-  position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
-}
-.water-ambient::before,.water-ambient::after{
-  content:"";position:absolute;width:140%;height:300px;
-  border-radius:40% 60% 55% 45%;
-  filter:blur(80px);
-}
-.water-ambient::before{
-  top:5%;left:-20%;
-  background:linear-gradient(135deg,var(--amb1,rgba(47,210,255,.08)),var(--amb2,rgba(61,61,234,.06)));
-  animation:waterDrift 18s ease-in-out infinite alternate;
-}
-.water-ambient::after{
-  bottom:10%;right:-20%;
-  background:linear-gradient(135deg,var(--amb3,rgba(243,16,186,.05)),var(--amb4,rgba(47,210,255,.06)));
-  animation:waterDrift2 22s ease-in-out infinite alternate;
-}
-
-/* --- SHELL --- */
-.challenge-shell{
-  width:min(920px,calc(100% - 32px));
+.wrap{
+  width:min(1080px,100% - 32px);
   margin:0 auto;
-  padding:16px 0 40px;
 }
 
-/* --- TOP NAV --- */
-.challenge-top{
+/* ===== HEADER ===== */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.site-header .wrap{
   display:flex;align-items:center;justify-content:space-between;
-  gap:14px;padding:8px 0 24px;
+  padding:12px 0;gap:12px;
 }
-.challenge-brand{
+.brand{
   display:flex;align-items:center;gap:10px;
-  font-weight:900;color:var(--yt-text);text-decoration:none;
-  font-size:.92rem;
+  text-decoration:none;color:var(--navy);
 }
-.challenge-brand img{width:38px;height:38px;border-radius:10px}
-.challenge-back{
-  font-size:.82rem;font-weight:700;color:var(--yt-muted);
-  transition:color .2s;
+.brand img{
+  width:36px;height:36px;border-radius:8px;
+  box-shadow:var(--shadow-sm);
 }
-.challenge-back:hover{color:var(--yt-cyan)}
+.brand-text{font-weight:900;font-size:.85rem;letter-spacing:.02em;line-height:1.2}
+.brand-sub{font-size:.68rem;font-weight:600;color:var(--text-muted);letter-spacing:.04em}
+.header-cta{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 18px;border-radius:999px;
+  background:var(--navy);color:var(--white);
+  font-size:.8rem;font-weight:700;letter-spacing:.02em;
+  text-decoration:none;transition:background .2s,transform .15s;
+}
+.header-cta:hover{background:var(--navy-light);transform:translateY(-1px);color:var(--white)}
 
-/* --- HERO --- */
-.challenge-hero{
-  position:relative;overflow:hidden;text-align:center;
-  padding:clamp(36px,8vw,72px) clamp(20px,4vw,48px);
-  border:1px solid rgba(47,210,255,.18);
-  border-radius:24px;
-  background:
-    radial-gradient(ellipse at 20% 10%,rgba(47,210,255,.12),transparent 50%),
-    radial-gradient(ellipse at 80% 90%,rgba(243,16,186,.07),transparent 45%),
-    radial-gradient(ellipse at 50% 50%,rgba(61,61,234,.06),transparent 60%),
-    var(--yt-surface-solid);
-  box-shadow:var(--shadow-raised),0 0 80px rgba(47,210,255,.06);
+/* ===== HERO ===== */
+.hero{
+  padding:clamp(48px,10vw,96px) 0 clamp(40px,8vw,72px);
+  text-align:center;
 }
-.challenge-hero::after{
-  content:"";position:absolute;bottom:0;left:0;right:0;height:1px;
-  background:var(--yt-gradient);opacity:.4;
-}
-
-.challenge-kicker{
+.hero-kicker{
   display:inline-block;
-  font-size:.72rem;font-weight:900;letter-spacing:.18em;
-  color:var(--yt-cyan);text-transform:uppercase;
+  font-size:.72rem;font-weight:800;letter-spacing:.16em;
+  color:var(--cyan-dark);text-transform:uppercase;
   padding:6px 16px;border-radius:999px;
-  background:rgba(47,210,255,.08);
-  border:1px solid rgba(47,210,255,.15);
+  background:var(--cyan-bg);
+  border:1px solid var(--cyan-border);
+  margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(2.2rem,6.5vw,4rem);
+  line-height:1.08;letter-spacing:-.04em;
+  font-weight:900;color:var(--navy);
+  max-width:800px;margin:0 auto 20px;
+}
+.hero-subtitle{
+  max-width:640px;margin:0 auto 32px;
+  font-size:clamp(1rem,2.2vw,1.15rem);
+  color:var(--text);line-height:1.7;
 }
 
-.challenge-hero h1{
-  font-size:clamp(2rem,7vw,4.2rem);line-height:1.05;
-  letter-spacing:-.045em;margin:18px auto 0;
-  max-width:780px;font-weight:900;
-  background:var(--yt-gradient);
+/* Prize display */
+.prize-display{
+  display:flex;flex-direction:column;align-items:center;
+  margin:0 auto 24px;
+}
+.prize-label{
+  font-size:.68rem;font-weight:800;letter-spacing:.2em;
+  color:var(--gold-dark);text-transform:uppercase;
+  margin-bottom:8px;
+}
+.prize-amount{
+  font-size:clamp(3rem,10vw,5.5rem);
+  font-weight:900;line-height:1;letter-spacing:-.03em;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold),var(--gold-light));
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 2px 4px rgba(184,134,11,.15));
+  position:relative;
+}
+.prize-qualifier{
+  margin-top:8px;font-size:.82rem;font-weight:600;
+  color:var(--text-muted);
+}
+.prize-qualifier em{font-style:normal;font-weight:700;color:var(--gold-dark)}
+
+/* Prize status notice */
+.prize-status{
+  max-width:640px;margin:20px auto 0;
+  padding:14px 20px;border-radius:var(--radius);
+  background:var(--gold-bg);
+  border:1px solid var(--gold-border);
+  font-size:.85rem;line-height:1.6;
+  color:var(--gold-dark);
+  text-align:center;
+}
+.prize-status strong{color:var(--gold-dark)}
+
+/* Hero CTAs */
+.hero-actions{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;
+  margin-top:28px;
 }
 
-.challenge-prize{
-  display:inline-flex;align-items:center;justify-content:center;
-  margin:18px auto 6px;padding:10px 28px;
-  border-radius:999px;font-size:clamp(1.3rem,4vw,1.9rem);font-weight:900;
-  letter-spacing:.02em;color:#fff;
-  background:var(--prize-bg,linear-gradient(135deg,#3d3dea,#2fd2ff));
-  box-shadow:0 4px 24px var(--prize-glow,rgba(47,210,255,.2)),0 0 60px var(--prize-glow-outer,rgba(47,210,255,.1));
-  position:relative;overflow:hidden;
-}
-
-/* --- PRIZE EFFECTS (assigned randomly via JS) --- */
-@keyframes prizeGlowPulse{
-  0%,100%{box-shadow:0 4px 24px var(--prize-glow,rgba(47,210,255,.2)),0 0 40px var(--prize-glow-outer,rgba(47,210,255,.1))}
-  50%{box-shadow:0 4px 32px var(--prize-glow,rgba(47,210,255,.35)),0 0 80px var(--prize-glow-outer,rgba(47,210,255,.2)),0 0 120px var(--prize-glow-far,rgba(47,210,255,.06))}
-}
-@keyframes prizeShimmer{
-  0%{transform:translateX(-100%) skewX(-15deg)}
-  100%{transform:translateX(200%) skewX(-15deg)}
-}
-@keyframes prizeFloat{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-4px)}
-}
-@keyframes prizeBorderRotate{
-  0%{--prize-angle:0deg}
-  100%{--prize-angle:360deg}
-}
-@keyframes prizeScalePop{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.04)}
-}
-@keyframes prizeColorShift{
-  0%{filter:hue-rotate(0deg)}
-  50%{filter:hue-rotate(25deg)}
-  100%{filter:hue-rotate(0deg)}
-}
-.prize-fx-pulse{animation:prizeGlowPulse 2.8s ease-in-out infinite}
-.prize-fx-shimmer .prize-shine{
-  position:absolute;top:0;left:0;width:40%;height:100%;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
-  animation:prizeShimmer 2.5s ease-in-out infinite;
-}
-.prize-fx-float{animation:prizeFloat 3s ease-in-out infinite}
-.prize-fx-breathe{animation:prizeScalePop 3.5s ease-in-out infinite}
-.prize-fx-hueshift{animation:prizeColorShift 6s ease-in-out infinite}
-.prize-fx-combo-a{animation:prizeFloat 3s ease-in-out infinite,prizeGlowPulse 2.8s ease-in-out infinite}
-.prize-fx-combo-b{animation:prizeScalePop 3.5s ease-in-out infinite,prizeColorShift 6s ease-in-out infinite}
-
-.challenge-intro{
-  max-width:640px;margin:14px auto 0;
-  color:var(--yt-body);font-size:clamp(.95rem,2vw,1.1rem);
-  line-height:1.65;
-}
-
-.challenge-streak{
-  display:inline-flex;align-items:center;gap:9px;
-  margin-top:20px;padding:10px 18px;
-  border:1px solid rgba(47,210,255,.2);
-  border-radius:999px;background:rgba(47,210,255,.06);
-  color:var(--yt-cyan);font-size:.82rem;font-weight:900;
-  letter-spacing:.04em;
-}
-.challenge-streak .dot{
-  width:10px;height:10px;border-radius:50%;
-  background:#2fd2ff;
-  box-shadow:0 0 0 4px rgba(47,210,255,.15),0 0 12px rgba(47,210,255,.3);
-  animation:pulse 2.5s ease-in-out infinite;
-}
-@keyframes pulse{
-  0%,100%{box-shadow:0 0 0 4px rgba(47,210,255,.15),0 0 12px rgba(47,210,255,.3)}
-  50%{box-shadow:0 0 0 7px rgba(47,210,255,.08),0 0 20px rgba(47,210,255,.2)}
-}
-
-/* --- BUTTONS --- */
-.btn-primary,.btn-outline,.btn-reveal{
+/* ===== BUTTONS ===== */
+.btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  padding:14px 28px;border-radius:14px;
-  font-family:var(--font-sans);font-size:.92rem;font-weight:800;
+  padding:14px 28px;border-radius:var(--radius);
+  font-family:var(--font);font-size:.9rem;font-weight:700;
   text-decoration:none;cursor:pointer;
-  transition:transform .2s var(--ease-out),box-shadow .2s,background .2s,border-color .2s;
+  transition:transform .15s var(--ease),box-shadow .2s,background .2s,border-color .2s;
 }
+.btn:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 .btn-primary{
-  background:var(--yt-gradient);color:#fff;border:none;
-  box-shadow:0 4px 16px rgba(47,210,255,.15);
+  background:var(--navy);color:var(--white);border:none;
+  box-shadow:var(--shadow-md);
 }
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(47,210,255,.25);color:#fff}
-.btn-outline{
-  background:transparent;color:var(--yt-cyan);
-  border:1.5px solid rgba(47,210,255,.3);
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);color:var(--white);background:var(--navy-light)}
+.btn-secondary{
+  background:var(--white);color:var(--navy);
+  border:1.5px solid var(--border);
 }
-.btn-outline:hover{border-color:var(--yt-cyan);color:#fff;background:rgba(47,210,255,.06)}
+.btn-secondary:hover{border-color:var(--navy);background:var(--surface);color:var(--navy)}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:var(--white);border:none;box-shadow:0 4px 12px rgba(184,134,11,.2);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,134,11,.3);color:var(--white)}
 
-.btn-reveal{
-  width:100%;max-width:480px;margin:0 auto;
-  padding:18px 32px;border-radius:16px;
-  font-size:1rem;font-weight:900;letter-spacing:.06em;
-  color:#fff;border:1.5px solid rgba(47,210,255,.3);
-  background:linear-gradient(135deg,rgba(47,210,255,.1),rgba(61,61,234,.1));
-  position:relative;overflow:hidden;
-}
-.btn-reveal::before{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,transparent,rgba(47,210,255,.08),transparent);
-  transform:translateX(-100%);
-  animation:shimmer 3s ease-in-out infinite;
-}
-@keyframes shimmer{
-  0%{transform:translateX(-100%)}
-  100%{transform:translateX(100%)}
-}
-.btn-reveal:hover{
-  border-color:var(--yt-cyan);
-  background:linear-gradient(135deg,rgba(47,210,255,.15),rgba(61,61,234,.15));
-  transform:translateY(-2px);box-shadow:0 6px 24px rgba(47,210,255,.15);
-  color:#fff;
-}
-.btn-reveal:focus-visible{
-  outline:2px solid var(--yt-cyan);outline-offset:3px;
-}
-
-.challenge-actions{
-  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:22px 0 0;
-}
-.challenge-actions a{min-width:min(100%,220px)}
-
-/* --- SHOW MORE/LESS TOGGLE --- */
-.reveal-wrapper{
-  margin-top:32px;text-align:center;
-}
-
-/* --- EXPANDABLE CONTENT --- */
-.expandable-content{
-  max-height:0;overflow:hidden;
-  transition:max-height .7s var(--ease-out),opacity .5s;
-  opacity:0;
-}
-.expandable-content.expanded{
-  max-height:none;opacity:1;
-}
-
-/* --- SCOREBOARD --- */
-.scoreboard{padding:24px 0}
-.scoreboard-head{
-  display:flex;align-items:end;justify-content:space-between;
-  gap:12px;margin-bottom:18px;
-}
-.scoreboard-head h2{
-  font-size:clamp(1.4rem,4vw,1.9rem);color:var(--yt-text);
-}
+/* ===== SECTION FOUNDATIONS ===== */
+.section{padding:clamp(48px,8vw,80px) 0}
+.section-alt{background:var(--surface)}
 .section-kicker{
-  display:block;font-size:.72rem;font-weight:900;
-  letter-spacing:.14em;color:var(--yt-cyan);
-  text-transform:uppercase;margin-bottom:6px;
+  display:block;font-size:.7rem;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;
+  margin-bottom:8px;
 }
-.live-tag{
-  display:inline-flex;align-items:center;gap:6px;
-  font-size:.7rem;font-weight:900;letter-spacing:.1em;
-  color:var(--yt-cyan);text-transform:uppercase;
-  white-space:nowrap;
+.section-kicker--cyan{color:var(--cyan-dark)}
+.section-kicker--gold{color:var(--gold-dark)}
+.section-kicker--indigo{color:var(--indigo)}
+.section-kicker--navy{color:var(--navy)}
+.section-title{
+  font-size:clamp(1.5rem,4vw,2.2rem);
+  font-weight:900;color:var(--navy);
+  line-height:1.15;letter-spacing:-.03em;
+  margin-bottom:12px;
 }
-.live-tag::before{
-  content:"";width:8px;height:8px;border-radius:50%;
-  background:var(--yt-cyan);
-  box-shadow:0 0 8px rgba(47,210,255,.4);
-  animation:pulse 2.5s ease-in-out infinite;
+.section-desc{
+  max-width:640px;font-size:clamp(.92rem,2vw,1.05rem);
+  color:var(--text);line-height:1.7;
+  margin-bottom:28px;
 }
 
-.score-grid{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+/* ===== SCOREBOARD ===== */
+.scoreboard-header{
+  display:flex;align-items:end;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;margin-bottom:24px;
 }
-.score-card{
-  min-height:140px;padding:22px 14px;
-  border:1px solid var(--yt-line);border-radius:18px;
-  background:var(--yt-surface-solid);
-  box-shadow:var(--shadow-card);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;position:relative;overflow:hidden;
+.live-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.7rem;font-weight:800;letter-spacing:.1em;
+  color:var(--success);text-transform:uppercase;
+  padding:5px 12px;border-radius:999px;
+  background:var(--success-bg);
 }
-.score-card::after{
-  content:"";position:absolute;top:0;left:0;right:0;height:2px;
-  background:var(--yt-gradient);opacity:.5;
+.live-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--success);
+  animation:livePulse 2s ease-in-out infinite;
 }
-.score-value{
-  font-size:clamp(2rem,6vw,3.2rem);line-height:1;font-weight:900;
-  letter-spacing:-.05em;color:var(--yt-cyan);
+@keyframes livePulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.5;transform:scale(.85)}
+}
+
+.stat-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+}
+.stat-card{
+  padding:28px 20px;border-radius:var(--radius-lg);
+  background:var(--white);border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  text-align:center;position:relative;
+  transition:transform .2s var(--ease),box-shadow .2s;
+}
+.stat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.stat-card--streak{border-color:var(--cyan-border);background:linear-gradient(180deg,rgba(47,210,255,.03),var(--white))}
+.stat-value{
+  font-size:clamp(2rem,5vw,2.8rem);font-weight:900;
+  color:var(--navy);line-height:1;letter-spacing:-.04em;
   font-variant-numeric:tabular-nums;
 }
-.score-label{
-  margin-top:10px;font-size:.84rem;font-weight:800;color:var(--yt-text);
+.stat-value--streak{color:var(--cyan-dark);font-size:clamp(1.1rem,3vw,1.4rem);letter-spacing:0}
+.stat-value--stopped{color:var(--danger)}
+.stat-label{
+  margin-top:8px;font-size:.85rem;font-weight:700;
+  color:var(--navy);
 }
-.score-note{
-  margin-top:5px;font-size:.7rem;color:var(--yt-muted);
+.stat-note{
+  margin-top:4px;font-size:.75rem;color:var(--text-muted);
 }
-.streak-card .score-value{
-  font-size:clamp(1rem,3vw,1.4rem);letter-spacing:-.01em;
-  color:var(--yt-cyan);
-}
-.score-status{margin-top:8px;font-size:.72rem;color:var(--yt-muted)}
-.score-footnote{font-size:.76rem;color:var(--yt-muted);margin-top:10px}
-.score-error{color:#d4804a}
 
-.score-explainer{
-  margin-top:16px;padding:16px 20px;
-  border:1px solid var(--yt-line);border-radius:14px;
-  background:rgba(47,210,255,.03);
-  font-size:.82rem;color:var(--yt-muted);
+.scoreboard-footer{
+  margin-top:16px;font-size:.78rem;color:var(--text-muted);
   line-height:1.6;
 }
-
-/* --- SECTIONS --- */
-.challenge-section{
-  margin:24px 0;padding:clamp(24px,4vw,36px);
-  border:1px solid var(--yt-line);border-radius:20px;
-  background:var(--yt-surface-solid);
-  box-shadow:var(--shadow-card);
-  position:relative;overflow:hidden;
-}
-.challenge-section::before{
-  content:"";position:absolute;top:0;left:0;right:0;height:2px;
-  background:var(--yt-gradient);opacity:.3;
-}
-.challenge-section h2{
-  font-size:clamp(1.25rem,3.5vw,1.7rem);color:var(--yt-text);
-  margin-bottom:12px;line-height:1.2;
-}
-.challenge-section p{color:var(--yt-body);margin:8px 0;line-height:1.65}
-.challenge-section ul,.challenge-section ol{padding-left:22px;margin:12px 0}
-.challenge-section li{margin:8px 0;color:var(--yt-body)}
-
-/* --- CLAIM TOPICS --- */
-.claim-list{
-  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:10px;margin-top:16px;
-}
-.claim-item{
-  padding:16px;border-radius:14px;
-  background:rgba(47,210,255,.04);
-  border:1px solid rgba(47,210,255,.1);
-  font-size:.9rem;font-weight:700;color:var(--yt-text);
-  transition:border-color .2s,background .2s,transform .2s;
-  cursor:default;
-}
-.claim-item:hover{
-  border-color:rgba(47,210,255,.25);
-  background:rgba(47,210,255,.07);
-  transform:translateY(-1px);
-}
-.claim-item .claim-tag{
-  display:block;font-size:.68rem;font-weight:900;
-  letter-spacing:.08em;color:var(--yt-cyan);
-  text-transform:uppercase;margin-bottom:4px;opacity:.7;
+.scoreboard-footer p{margin:4px 0}
+.scoreboard-error{
+  color:var(--danger);font-weight:600;
 }
 
-/* --- PROCESS STEPS --- */
-.process-steps{
-  counter-reset:step;list-style:none;padding-left:0;margin:16px 0;
+.scoreboard-link{margin-top:16px}
+
+/* ===== CLAIM CARDS ===== */
+.claim-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
 }
-.process-steps li{
+.claim-card{
+  padding:24px;border-radius:var(--radius-lg);
+  background:var(--white);border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  transition:transform .2s var(--ease),box-shadow .2s,border-color .2s;
+  position:relative;
+}
+.claim-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--cyan-border);
+}
+.claim-number{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:8px;
+  background:var(--cyan-bg);color:var(--cyan-dark);
+  font-size:.8rem;font-weight:900;
+  margin-bottom:12px;
+}
+.claim-title{
+  font-size:.95rem;font-weight:800;color:var(--navy);
+  line-height:1.3;margin-bottom:6px;
+}
+.claim-desc{
+  font-size:.82rem;color:var(--text-muted);line-height:1.5;
+}
+.claim-action{
+  display:inline-flex;align-items:center;gap:4px;
+  margin-top:12px;font-size:.76rem;font-weight:700;
+  color:var(--cyan-dark);text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.claim-action svg{width:14px;height:14px}
+
+/* ===== QUALIFICATION STEPS ===== */
+.steps-list{
+  counter-reset:step;list-style:none;padding:0;
+  max-width:720px;
+}
+.step-item{
   counter-increment:step;position:relative;
-  padding:14px 14px 14px 52px;margin:8px 0;
-  border:1px solid var(--yt-line);border-radius:12px;
-  background:rgba(47,210,255,.02);
+  padding:18px 18px 18px 60px;margin:10px 0;
+  border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--white);
+  transition:border-color .2s,box-shadow .2s;
 }
-.process-steps li::before{
-  content:counter(step);position:absolute;left:14px;top:14px;
-  width:28px;height:28px;border-radius:8px;
-  background:rgba(47,210,255,.1);
-  color:var(--yt-cyan);font-weight:900;font-size:.82rem;
+.step-item:hover{border-color:var(--cyan-border);box-shadow:var(--shadow)}
+.step-item::before{
+  content:counter(step);position:absolute;left:16px;top:18px;
+  width:32px;height:32px;border-radius:8px;
+  background:var(--indigo);color:var(--white);
+  font-weight:900;font-size:.85rem;
   display:flex;align-items:center;justify-content:center;
 }
+.step-item strong{color:var(--navy)}
 
-/* --- SCOREBOARD CHANGE FLOW --- */
-.flow-list{list-style:none;padding:0;margin:16px 0}
-.flow-item{
-  display:flex;align-items:flex-start;gap:14px;
-  padding:14px;margin:8px 0;
-  border:1px solid var(--yt-line);border-radius:12px;
-  background:rgba(47,210,255,.02);
+.evidence-callout{
+  margin-top:24px;padding:20px 24px;
+  border-radius:var(--radius);
+  background:var(--indigo-bg);
+  border-left:4px solid var(--indigo);
 }
-.flow-icon{
-  flex-shrink:0;width:36px;height:36px;border-radius:10px;
+.evidence-callout p{
+  font-size:1rem;font-weight:800;
+  color:var(--indigo);margin:0;
+}
+
+/* ===== REVIEW SECTION ===== */
+.review-list{list-style:none;padding:0;margin:20px 0}
+.review-item{
+  display:flex;gap:14px;align-items:flex-start;
+  padding:16px;margin:8px 0;
+  border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--white);
+}
+.review-icon{
+  flex-shrink:0;width:36px;height:36px;border-radius:8px;
   display:flex;align-items:center;justify-content:center;
-  font-size:.9rem;font-weight:900;
+  font-size:.85rem;
 }
-.flow-icon.submit{background:rgba(47,210,255,.1);color:var(--yt-cyan)}
-.flow-icon.review{background:rgba(61,61,234,.1);color:var(--yt-indigo)}
-.flow-icon.verified{background:rgba(243,16,186,.1);color:var(--yt-magenta)}
-.flow-icon.streak{background:rgba(47,210,255,.1);color:var(--yt-cyan)}
-.flow-body strong{color:var(--yt-text)}
-.flow-body{font-size:.88rem;line-height:1.55}
+.review-icon--check{background:var(--success-bg);color:var(--success)}
+.review-icon--shield{background:var(--indigo-bg);color:var(--indigo)}
+.review-body{font-size:.9rem;line-height:1.6}
+.review-body strong{color:var(--navy)}
 
-/* --- CLOSING --- */
-.challenge-closing{
+.reviewer-status{
+  margin-top:20px;padding:16px 20px;
+  border-radius:var(--radius);
+  background:var(--surface-alt);
+  border:1px solid var(--border);
+  font-size:.88rem;line-height:1.6;
+}
+.reviewer-status strong{color:var(--navy)}
+
+/* ===== CONTEST RULES ===== */
+.rules-accordion{margin:16px 0}
+.rule-item{
+  border:1px solid var(--border);border-radius:var(--radius);
+  margin:8px 0;overflow:hidden;
+  background:var(--white);
+  transition:box-shadow .2s;
+}
+.rule-item:hover{box-shadow:var(--shadow)}
+.rule-toggle{
+  display:flex;align-items:center;justify-content:space-between;
+  width:100%;padding:16px 20px;
+  background:none;border:none;cursor:pointer;
+  font-family:var(--font);font-size:.92rem;font-weight:700;
+  color:var(--navy);text-align:left;
+  transition:background .15s;
+}
+.rule-toggle:hover{background:var(--surface)}
+.rule-toggle:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+.rule-toggle svg{
+  flex-shrink:0;width:20px;height:20px;
+  color:var(--text-muted);
+  transition:transform .25s var(--ease);
+}
+.rule-item[open] .rule-toggle svg{transform:rotate(180deg)}
+.rule-content{
+  padding:0 20px 16px;
+  font-size:.88rem;color:var(--text);line-height:1.7;
+}
+
+/* ===== SCOREBOARD PROCESS ===== */
+.process-timeline{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;position:relative;margin:32px 0;
+}
+.process-timeline::before{
+  content:"";position:absolute;
+  top:24px;left:calc(12.5% + 8px);right:calc(12.5% + 8px);
+  height:2px;background:var(--border);
+}
+.process-step{
+  text-align:center;position:relative;
+  padding:0 8px;
+}
+.process-dot{
+  width:48px;height:48px;border-radius:50%;
+  margin:0 auto 12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;font-weight:900;color:var(--white);
+  position:relative;z-index:1;
+}
+.process-dot--submit{background:var(--cyan-dark)}
+.process-dot--review{background:var(--indigo)}
+.process-dot--verified{background:var(--gold)}
+.process-dot--streak{background:var(--navy)}
+.process-name{
+  font-size:.82rem;font-weight:800;color:var(--navy);
+  margin-bottom:4px;
+}
+.process-desc{
+  font-size:.75rem;color:var(--text-muted);line-height:1.4;
+}
+
+/* ===== CLOSING ===== */
+.closing{
   text-align:center;
-  margin:32px 0 8px;padding:clamp(32px,6vw,56px) clamp(20px,4vw,40px);
-  border:1px solid rgba(47,210,255,.15);border-radius:20px;
-  background:
-    radial-gradient(ellipse at 50% 0%,rgba(47,210,255,.08),transparent 60%),
-    var(--yt-surface-solid);
+  padding:clamp(56px,10vw,96px) 0;
+  background:var(--navy);color:var(--white);
 }
-.challenge-closing h2{
-  font-size:clamp(1.4rem,4vw,2rem);color:var(--yt-text);
-  margin-bottom:12px;line-height:1.2;
-}
-.challenge-closing p{
-  max-width:560px;margin:0 auto 16px;
-  color:var(--yt-body);font-size:clamp(.92rem,2vw,1.05rem);line-height:1.65;
+.closing .section-kicker{color:var(--cyan)}
+.closing .section-title{color:var(--white)}
+.closing-desc{
+  max-width:560px;margin:0 auto 28px;
+  font-size:clamp(.92rem,2vw,1.05rem);
+  color:rgba(255,255,255,.7);line-height:1.7;
 }
 
-/* --- FOOTER --- */
-.challenge-footer{
-  text-align:center;color:var(--yt-muted);font-size:.78rem;
-  padding:20px 0 8px;border-top:1px solid var(--yt-line);
-  margin-top:24px;
+/* ===== FOOTER ===== */
+.site-footer{
+  text-align:center;padding:28px 0;
+  border-top:1px solid var(--border);
+  font-size:.8rem;color:var(--text-muted);line-height:1.8;
 }
-.challenge-footer p{margin:4px 0}
-.challenge-footer a{color:var(--yt-muted)}
-.challenge-footer a:hover{color:var(--yt-cyan)}
+.site-footer a{color:var(--text-muted)}
+.site-footer a:hover{color:var(--cyan-dark)}
 
-/* --- MOBILE --- */
-@media(max-width:640px){
-  .score-grid{grid-template-columns:1fr}
-  .score-card{min-height:100px}
-  .claim-list{grid-template-columns:1fr}
-  .challenge-top{align-items:flex-start}
-  .challenge-back{max-width:120px;text-align:right}
-  .challenge-actions{flex-direction:column;align-items:center}
-  .challenge-actions a{width:100%}
-  .btn-reveal{max-width:100%}
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+  .stat-grid{grid-template-columns:1fr}
+  .claim-grid{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column;align-items:center}
+  .hero-actions .btn{width:100%;max-width:360px}
+  .process-timeline{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+  .process-timeline::before{
+    top:0;bottom:0;left:23px;right:auto;
+    width:2px;height:auto;
+  }
+  .process-step{
+    display:flex;gap:16px;align-items:flex-start;
+    text-align:left;padding:12px 0;
+  }
+  .process-dot{
+    flex-shrink:0;width:48px;height:48px;margin:0;
+  }
+  .header-cta-text{display:none}
+  .site-header .wrap{padding:10px 0}
+}
+@media(min-width:769px) and (max-width:1024px){
+  .claim-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-/* --- REDUCED MOTION --- */
+/* ===== REDUCED MOTION ===== */
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{
-    animation-duration:0.01ms!important;
+    animation-duration:.01ms!important;
     animation-iteration-count:1!important;
-    transition-duration:0.01ms!important;
+    transition-duration:.01ms!important;
     scroll-behavior:auto!important;
   }
-  .water-ambient::before,.water-ambient::after{animation:none;opacity:.25}
-  .btn-reveal::before{animation:none}
-  .expandable-content{transition:none}
-  .challenge-prize,.prize-shine{animation:none!important}
+}
+
+/* ===== ENTRANCE ANIMATIONS ===== */
+.anim-ready{
+  opacity:0;transform:translateY(16px);
+  transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1);
+}
+.anim-ready.revealed{
+  opacity:1;transform:translateY(0);
+}
+
+/* ===== FOCUS VISIBLE ===== */
+:focus-visible{
+  outline:2px solid var(--cyan);
+  outline-offset:2px;
 }
   </style>
 </head>
 <body>
-<div class="water-ambient" aria-hidden="true"></div>
-<main class="challenge-shell">
-  <header class="challenge-top">
-    <a class="challenge-brand" href="index.html" aria-label="Y'all Too home">
-      <img src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-logo-gwP3315oRt91xpE8.png" alt="">
-      <span>YALL TOO · GEI</span>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="https://jawa-dam.github.io/666/" aria-label="Y'all Too — GEI home">
+      <img src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-yalltoo-666-9qoyhEUbsZmy89kI.png" alt="GEI Logo" width="36" height="36">
+      <div>
+        <div class="brand-text">Y'ALL TOO</div>
+        <div class="brand-sub">GENESIS ENGINEERED INTERPRETATION</div>
+      </div>
     </a>
-    
-  </header>
-
-  <!-- ========== HERO — ALWAYS VISIBLE ========== -->
-  <section class="challenge-hero">
-    <span class="challenge-kicker">THE PUBLIC GEI RESEARCH CHALLENGE</span>
-    <h1>PROVE WILBERT BOUIE JR. WRONG!</h1>
-    <div class="challenge-prize" id="prize-badge"><span class="prize-shine"></span>$6.66 CASH PRIZE</div>
-    <p class="challenge-intro" id="hero-intro"></p>
-    <div class="challenge-streak" id="hero-streak">
-      <span class="dot"></span>
-      <span id="hero-streak-text">GEI STREAK: STILL ALIVE</span>
-    </div>
-    <div class="challenge-actions" style="margin-top:18px">
-      <a class="btn-primary" href="https://github.com/jawa-dam/yalltoo/issues/new?template=gei-challenge-submission.yml" target="_blank" rel="noopener noreferrer">SUBMIT YOUR CHALLENGE ↗</a>
-      <a class="btn-outline" href="#" id="scroll-to-scoreboard">VIEW THE SCOREBOARD ↓</a>
-    </div>
-  </section>
-
-  <!-- ========== SHOW MORE / SHOW LESS TOGGLE ========== -->
-  <div class="reveal-wrapper">
-    <button class="btn-reveal" id="reveal-btn" aria-expanded="false" aria-controls="expandable-area"></button>
+    <a class="header-cta" href="https://github.com/jawa-dam/yalltoo/issues/new?template=gei-challenge-submission.yml" target="_blank" rel="noopener noreferrer">
+      <span class="header-cta-text">Submit a Challenge</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+    </a>
   </div>
+</header>
 
-  <!-- ========== EXPANDABLE CONTENT — HIDDEN BY DEFAULT ========== -->
-  <div class="expandable-content" id="expandable-area" role="region" aria-label="Full challenge details">
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="hero-kicker">THE PUBLIC GEI RESEARCH CHALLENGE</span>
+    <h1>THINK GEI IS WRONG?<br>PROVE IT.</h1>
+    <p class="hero-subtitle">Challenge Genesis Engineered Interpretation with evidence, research, and reasoning. Put the claims to the test through a transparent public challenge and independent review.</p>
 
-    <!-- SCOREBOARD -->
-    <section class="scoreboard" id="scoreboard" aria-labelledby="scoreboard-title">
-      <div class="scoreboard-head">
-        <div>
-          <span class="section-kicker">PUBLIC TRANSPARENCY</span>
-          <h2 id="scoreboard-title">GEI Challenge Scoreboard</h2>
+    <div class="prize-display">
+      <span class="prize-label">PROPOSED CASH AWARD</span>
+      <span class="prize-amount" aria-label="Six dollars and sixty-six cents">$6.66</span>
+      <span class="prize-qualifier">Bring evidence. Challenge the interpretation. Let <em>independent review</em> decide.</span>
+    </div>
+
+    <div class="prize-status" role="note">
+      <strong>Research challenge active.</strong> Cash-prize eligibility is not yet open. Official rules and independent reviewer details must be published before prize entries begin.
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#claims">EXPLORE THE CHALLENGE</a>
+      <a class="btn btn-secondary" href="#scoreboard">VIEW THE PUBLIC SCOREBOARD</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCOREBOARD ===== -->
+<section class="section section-alt" id="scoreboard" aria-labelledby="scoreboard-title">
+  <div class="wrap">
+    <div class="scoreboard-header">
+      <div>
+        <span class="section-kicker section-kicker--cyan">PUBLIC TRANSPARENCY</span>
+        <h2 class="section-title" id="scoreboard-title">GEI Challenge Scoreboard</h2>
+      </div>
+      <span class="live-badge" aria-label="Live data"><span class="live-dot"></span>LIVE LEDGER</span>
+    </div>
+    <p class="section-desc" id="scoreboard-desc">Every submission is logged publicly. Verified challenges are counted separately — only after an independent review confirms that a specific GEI claim has been materially refuted.</p>
+
+    <div class="stat-grid" aria-live="polite">
+      <article class="stat-card">
+        <div class="stat-value" id="submission-count">—</div>
+        <div class="stat-label">Public Submissions</div>
+        <div class="stat-note">Challenge entries received</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-value" id="verified-count">—</div>
+        <div class="stat-label">Verified Challenges</div>
+        <div class="stat-note">Evidence accepted under the rules</div>
+      </article>
+      <article class="stat-card stat-card--streak">
+        <div class="stat-value stat-value--streak" id="streak-status">CHECKING&hellip;</div>
+        <div class="stat-label">GEI Streak</div>
+        <div class="stat-note" id="streak-detail">Checking the public ledger</div>
+      </article>
+    </div>
+
+    <div class="scoreboard-footer">
+      <p id="score-updated">Connecting to the public GitHub submission ledger&hellip;</p>
+      <p>Counts reflect public GitHub issues titled with <strong>[GEI CHALLENGE]</strong>. A submission is not a verified refutation. A verified challenge is counted only after an independent review and a published decision.</p>
+      <p class="scoreboard-error" id="score-error" hidden>Live counts are temporarily unavailable. The public submission ledger remains accessible below.</p>
+    </div>
+
+    <div class="scoreboard-link">
+      <a class="btn btn-secondary" href="https://github.com/jawa-dam/yalltoo/issues?q=is%3Aissue+%22%5BGEI+CHALLENGE%5D%22" target="_blank" rel="noopener noreferrer">
+        Open Public Submissions
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SIX GEI CLAIMS ===== -->
+<section class="section" id="claims" aria-labelledby="claims-title">
+  <div class="wrap">
+    <span class="section-kicker section-kicker--navy">WHAT ARE YOU CHALLENGING?</span>
+    <h2 class="section-title" id="claims-title">Six claims. Pick one. Bring the evidence.</h2>
+    <p class="section-desc">Genesis Engineered Interpretation proposes a hydraulic-engineering reading of Genesis 1–6. Each claim below is a specific part of that framework — and each one is open to challenge.</p>
+
+    <div class="claim-grid">
+      <article class="claim-card">
+        <div class="claim-number">1</div>
+        <div class="claim-title">Adam and the proposed A-DAM function</div>
+        <div class="claim-desc">The name Adam is interpreted as a compound describing a dam-building or water-control function.</div>
+        <span class="claim-action" aria-hidden="true">Challenge this claim <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+      </article>
+      <article class="claim-card">
+        <div class="claim-number">2</div>
+        <div class="claim-title">The firmament as a hydraulic partition</div>
+        <div class="claim-desc">The firmament (raqia) is proposed as an engineered barrier separating water bodies in a controlled system.</div>
+        <span class="claim-action" aria-hidden="true">Challenge this claim <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+      </article>
+      <article class="claim-card">
+        <div class="claim-number">3</div>
+        <div class="claim-title">The gathered waters as a reservoir or millpond</div>
+        <div class="claim-desc">The gathering of waters into one place is interpreted as the formation of a reservoir or millpond.</div>
+        <span class="claim-action" aria-hidden="true">Challenge this claim <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+      </article>
+      <article class="claim-card">
+        <div class="claim-number">4</div>
+        <div class="claim-title">Light and darkness as water-release imagery</div>
+        <div class="claim-desc">Light and darkness are proposed as descriptions of water being released and held within the system.</div>
+        <span class="claim-action" aria-hidden="true">Challenge this claim <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+      </article>
+      <article class="claim-card">
+        <div class="claim-number">5</div>
+        <div class="claim-title">Waterwheels, tributaries, and the proposed mill system</div>
+        <div class="claim-desc">The rivers of Eden are interpreted as tributaries powering a waterwheel-based mill system.</div>
+        <span class="claim-action" aria-hidden="true">Challenge this claim <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+      </article>
+      <article class="claim-card">
+        <div class="claim-number">6</div>
+        <div class="claim-title">The overall six-stage engineering interpretation</div>
+        <div class="claim-desc">The six days of creation are proposed as six stages in the construction of a hydraulic engineering project.</div>
+        <span class="claim-action" aria-hidden="true">Challenge this claim <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW TO QUALIFY ===== -->
+<section class="section section-alt" id="qualify" aria-labelledby="qualify-title">
+  <div class="wrap">
+    <span class="section-kicker section-kicker--indigo">HOW TO QUALIFY</span>
+    <h2 class="section-title" id="qualify-title">Evidence beats opinion.</h2>
+    <p class="section-desc">A strong challenge is specific, sourced, and addresses the strongest counterargument. Follow these steps.</p>
+
+    <ol class="steps-list">
+      <li class="step-item"><strong>Identify</strong> one specific GEI statement or interpretation you are challenging.</li>
+      <li class="step-item"><strong>Reference</strong> the relevant Genesis passage, Hebrew language element, or engineering claim.</li>
+      <li class="step-item"><strong>Provide</strong> reliable, checkable evidence that contradicts the claim.</li>
+      <li class="step-item"><strong>Explain</strong> why the contradiction materially weakens or disproves that part of GEI.</li>
+      <li class="step-item"><strong>Address</strong> the strongest reasonable response to your argument.</li>
+    </ol>
+
+    <div class="evidence-callout">
+      <p>EVIDENCE BEATS OPINION.</p>
+    </div>
+
+    <p style="margin-top:16px;font-size:.9rem;color:var(--text)"><strong>Disagreement, ridicule, unsupported assertions, and arguments that merely offer another interpretation do not qualify by themselves.</strong></p>
+
+    <div class="hero-actions" style="margin-top:28px;justify-content:flex-start">
+      <a class="btn btn-primary" href="https://github.com/jawa-dam/yalltoo/issues/new?template=gei-challenge-submission.yml" target="_blank" rel="noopener noreferrer">Submit Your Evidence
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="btn btn-secondary" href="mailto:Contact@yalltoo.com?subject=GEI%20Challenge%20Submission">Submit by Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDEPENDENT REVIEW ===== -->
+<section class="section" id="review" aria-labelledby="review-title">
+  <div class="wrap">
+    <span class="section-kicker section-kicker--cyan">INDEPENDENT REVIEW</span>
+    <h2 class="section-title" id="review-title">Who decides whether GEI has been disproved?</h2>
+    <p class="section-desc">A verified challenge must be assessed by an independent reviewer — not Wilbert Bouie Jr. and not the person submitting the challenge.</p>
+
+    <ul class="review-list">
+      <li class="review-item">
+        <div class="review-icon review-icon--shield" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <span class="live-tag">LIVE LEDGER</span>
+        <div class="review-body"><strong>Independence:</strong> The reviewer must disclose relevant financial, professional, personal, or research conflicts and recuse themselves where impartiality could reasonably be questioned.</div>
+      </li>
+      <li class="review-item">
+        <div class="review-icon review-icon--check" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        </div>
+        <div class="review-body"><strong>Evidence-first decision:</strong> The reviewer evaluates the exact GEI claim, the submitter's sources, the reasoning, and any written response from Wilbert.</div>
+      </li>
+      <li class="review-item">
+        <div class="review-icon review-icon--check" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+        </div>
+        <div class="review-body"><strong>Public explanation:</strong> Every verified or rejected determination receives a short written rationale with sources, the specific claim examined, and the review date.</div>
+      </li>
+      <li class="review-item">
+        <div class="review-icon review-icon--shield" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        </div>
+        <div class="review-body"><strong>Meaningful scope:</strong> A finding applies to the specific claim actually refuted. It does not automatically disprove every part of GEI.</div>
+      </li>
+      <li class="review-item">
+        <div class="review-icon review-icon--check" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <div class="review-body"><strong>Scoreboard integrity:</strong> Only after the written determination is published is the issue titled <strong>[GEI CHALLENGE] [VERIFIED]</strong> and counted as a verified challenge.</div>
+      </li>
+    </ul>
+
+    <div class="reviewer-status">
+      <strong>Reviewer appointment:</strong> No reviewer is being represented as appointed yet. The reviewer's name, relevant qualifications, independence statement, and any disclosed conflicts must be published on this page before the prize contest officially opens.
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFICIAL CONTEST RULES ===== -->
+<section class="section section-alt" id="rules" aria-labelledby="rules-title">
+  <div class="wrap">
+    <span class="section-kicker section-kicker--gold">OFFICIAL CONTEST RULES</span>
+    <h2 class="section-title" id="rules-title">Clear rules before the cash prize opens</h2>
+    <p class="section-desc">The $6.66 prize is a proposed award, not a currently open cash promotion. Before accepting entries for the prize, the organizer will publish complete official rules here.</p>
+
+    <div class="rules-accordion" id="rules-accordion">
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>1. Organizer and contact</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">The responsible contest organizer and a working contact method will be published here before prize entries open.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>2. Eligibility</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">Minimum age, eligible countries or locations, and any exclusions will be defined in the official rules.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>3. Dates</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">The official opening date, closing date, time zone, and final submission cutoff will be published before the prize contest begins.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>4. Entry requirements</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">How to submit, permitted formats, source requirements, and whether revisions are allowed will be detailed in the official rules.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>5. Judging</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">The named independent reviewer or panel, published scoring criteria, decision process, conflict policy, and tie-break procedure will be established.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>6. Prize details</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">Confirmation that the $6.66 USD award is funded, how and when it will be delivered, any claim deadline, and applicable tax responsibilities will be published.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>7. Privacy and publicity</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">What submission information will be public, how entrant names are displayed, and how winner publicity is handled will be described in the official rules.</div>
+      </details>
+      <details class="rule-item">
+        <summary class="rule-toggle">
+          <span>8. Administration</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="rule-content">Rules for duplicate, incomplete, abusive, fabricated, or plagiarized entries; disqualification; and any permitted changes or cancellation will be detailed.</div>
+      </details>
+    </div>
+
+    <p style="font-size:.88rem;color:var(--text);line-height:1.7"><strong>No purchase or entry fee is required.</strong> The prize will not be awarded solely because an entry is submitted. Until the complete official rules and independent reviewer details are published, this page functions as a public research challenge and scoreboard only; prize eligibility is not yet open.</p>
+  </div>
+</section>
+
+<!-- ===== HOW THE SCOREBOARD CHANGES ===== -->
+<section class="section" id="process" aria-labelledby="process-title">
+  <div class="wrap">
+    <span class="section-kicker section-kicker--navy">HOW THE SCOREBOARD CHANGES</span>
+    <h2 class="section-title" id="process-title">Submission is not the same as proof.</h2>
+    <p class="section-desc">The scoreboard tracks two separate things: how many challenges have been submitted, and how many have survived independent review. Here is how the process works.</p>
+
+    <div class="process-timeline" role="list">
+      <div class="process-step" role="listitem">
+        <div class="process-dot process-dot--submit" aria-hidden="true">1</div>
+        <div>
+          <div class="process-name">Submission</div>
+          <div class="process-desc">An entry is received and listed publicly. This does not affect the streak.</div>
+        </div>
       </div>
-      <p class="score-explainer" id="scoreboard-explainer"></p>
-      <div class="score-grid" aria-live="polite">
-        <article class="score-card">
-          <div class="score-value" id="submission-count">—</div>
-          <div class="score-label">Submissions</div>
-          <div class="score-note">Public challenge entries</div>
-        </article>
-        <article class="score-card">
-          <div class="score-value" id="verified-count">—</div>
-          <div class="score-label">Verified Challenges</div>
-          <div class="score-note">Evidence accepted under the rules</div>
-        </article>
-        <article class="score-card streak-card">
-          <div class="score-value" id="streak-count">CHECKING…</div>
-          <div class="score-label">Wilbert's GEI Streak</div>
-          <div class="score-status" id="streak-detail">Checking the public ledger</div>
-        </article>
+      <div class="process-step" role="listitem">
+        <div class="process-dot process-dot--review" aria-hidden="true">2</div>
+        <div>
+          <div class="process-name">Under Review</div>
+          <div class="process-desc">The argument is examined against the published criteria.</div>
+        </div>
       </div>
-      <p class="score-footnote" id="score-updated">Connecting to the public GitHub submission ledger…</p>
-      <p class="score-footnote">Counts include public GitHub issues titled with <strong>[GEI CHALLENGE]</strong>. A submission is not a verified refutation. A verified challenge is counted only after an independent review and a public decision; the issue title is then marked <strong>[VERIFIED]</strong>.</p>
-      <p class="score-footnote score-error" id="score-error" hidden>Live counts are temporarily unavailable. The public submission ledger remains accessible below.</p>
-      <div class="challenge-actions">
-        <a class="btn-outline" href="https://github.com/jawa-dam/yalltoo/issues?q=is%3Aissue+%22%5BGEI+CHALLENGE%5D%22" target="_blank" rel="noopener noreferrer">OPEN PUBLIC SUBMISSIONS ↗</a>
+      <div class="process-step" role="listitem">
+        <div class="process-dot process-dot--verified" aria-hidden="true">3</div>
+        <div>
+          <div class="process-name">Verified Challenge</div>
+          <div class="process-desc">The independent reviewer publishes a reasoned finding that the evidence materially refutes a defined GEI claim.</div>
+        </div>
       </div>
-    </section>
-
-    <!-- WHAT ARE YOU CHALLENGING? -->
-    <section class="challenge-section">
-      <span class="section-kicker">WHAT ARE YOU CHALLENGING?</span>
-      <h2 id="claims-heading">Test the GEI interpretation</h2>
-      <p id="claims-intro"></p>
-      <div class="claim-list">
-        <div class="claim-item"><span class="claim-tag">Claim 1</span>Adam and the proposed A-DAM function</div>
-        <div class="claim-item"><span class="claim-tag">Claim 2</span>The firmament as a hydraulic partition</div>
-        <div class="claim-item"><span class="claim-tag">Claim 3</span>The gathered waters as a reservoir or millpond</div>
-        <div class="claim-item"><span class="claim-tag">Claim 4</span>Light and darkness as water-release imagery</div>
-        <div class="claim-item"><span class="claim-tag">Claim 5</span>Waterwheels, tributaries, and the proposed mill system</div>
-        <div class="claim-item"><span class="claim-tag">Claim 6</span>The overall six-stage engineering interpretation</div>
+      <div class="process-step" role="listitem">
+        <div class="process-dot process-dot--streak" aria-hidden="true">4</div>
+        <div>
+          <div class="process-name">Streak Status</div>
+          <div class="process-desc">The streak remains active until a verified challenge is recorded. A verified refutation changes the status to STREAK STOPPED.</div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- HOW TO QUALIFY -->
-    <section class="challenge-section">
-      <span class="section-kicker">HOW TO QUALIFY</span>
-      <h2 id="qualify-heading">Evidence beats opinion.</h2>
-      <p id="qualify-intro"></p>
-      <ol class="process-steps">
-        <li>Identify one specific GEI statement or interpretation.</li>
-        <li>Quote or precisely reference the relevant Genesis passage, language, or engineering claim.</li>
-        <li>Provide reliable, checkable evidence that contradicts the claim.</li>
-        <li>Explain why the contradiction materially weakens or disproves that part of GEI.</li>
-        <li>Address the strongest reasonable response to your argument.</li>
-      </ol>
-      <p><strong>Disagreement, ridicule, unsupported assertions, and arguments that merely offer another interpretation do not qualify by themselves.</strong></p>
-      <div class="challenge-actions">
-        <a class="btn-primary" href="https://github.com/jawa-dam/yalltoo/issues/new?template=gei-challenge-submission.yml" target="_blank" rel="noopener noreferrer" id="submit-action-text">MAKE YOUR CASE ↗</a>
-        <a class="btn-outline" href="mailto:Contact@yalltoo.com?subject=GEI%20Challenge%20Submission">SUBMIT BY EMAIL</a>
-      </div>
-    </section>
+    <p style="font-size:.85rem;color:var(--text-muted);line-height:1.6;margin-top:16px">The scoreboard counts only public GitHub issues with titles beginning <strong>[GEI CHALLENGE]</strong>. A verified result must be explicitly marked <strong>[GEI CHALLENGE] [VERIFIED]</strong> after the independent decision is published.</p>
+  </div>
+</section>
 
-    <!-- INDEPENDENT REVIEW -->
-    <section class="challenge-section">
-      <span class="section-kicker">INDEPENDENT REVIEW</span>
-      <h2>Who decides whether GEI has been disproved?</h2>
-      <p>A verified challenge must be assessed by an independent reviewer who is not Wilbert Bouie Jr. and is not the person submitting the challenge. The reviewer should have relevant expertise in at least one area implicated by the entry, such as biblical studies, Hebrew or ancient-language research, ancient Near Eastern history, hydrology, or engineering.</p>
-      <ul>
-        <li><strong>Independence:</strong> the reviewer must disclose relevant financial, professional, personal, or research conflicts and recuse themselves where impartiality could reasonably be questioned.</li>
-        <li><strong>Evidence-first decision:</strong> the reviewer evaluates the exact GEI claim, the submitter's sources, the reasoning, and any written response from Wilbert.</li>
-        <li><strong>Public explanation:</strong> every verified or rejected determination receives a short written rationale with sources, the specific claim examined, and the review date.</li>
-        <li><strong>Meaningful scope:</strong> a finding applies to the specific claim actually refuted. It does not automatically disprove every part of GEI.</li>
-        <li><strong>Scoreboard integrity:</strong> only after the written determination is published is the issue title marked <strong>[GEI CHALLENGE] [VERIFIED]</strong> and counted as a verified challenge.</li>
-      </ul>
-      <p><strong>Reviewer appointment:</strong> no reviewer is being represented as appointed yet. The reviewer's name, relevant qualifications, independence statement, and any disclosed conflicts must be published on this page before the prize contest officially opens.</p>
-    </section>
+<!-- ===== CLOSING CTA ===== -->
+<section class="closing" id="cta">
+  <div class="wrap">
+    <span class="section-kicker">THE CHALLENGE STANDS</span>
+    <h2 class="section-title">Think the interpretation is wrong?<br>Bring the evidence.</h2>
+    <p class="closing-desc">Challenge the claim. Examine the source. Test the reasoning. Public submissions, independent review, transparent decisions.</p>
+    <div class="hero-actions" style="justify-content:center">
+      <a class="btn btn-gold" href="https://github.com/jawa-dam/yalltoo/issues/new?template=gei-challenge-submission.yml" target="_blank" rel="noopener noreferrer">Submit Your Challenge
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="btn btn-secondary" href="#top" style="border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.8)">Back to Top</a>
+    </div>
+  </div>
+</section>
 
-    <!-- OFFICIAL CONTEST RULES -->
-    <section class="challenge-section">
-      <span class="section-kicker">OFFICIAL CONTEST RULES</span>
-      <h2>Clear rules before the cash prize opens</h2>
-      <p>The $6.66 prize is an advertised proposed award, not a currently open cash promotion. Before accepting entries for the prize, the organizer will publish complete official rules here, including:</p>
-      <ol>
-        <li><strong>Organizer and contact:</strong> the responsible contest organizer and a working contact method.</li>
-        <li><strong>Eligibility:</strong> minimum age, eligible countries or locations, and any exclusions.</li>
-        <li><strong>Dates:</strong> the official opening date, closing date, time zone, and final submission cutoff.</li>
-        <li><strong>Entry requirements:</strong> how to submit, permitted formats, source requirements, and whether revisions are allowed.</li>
-        <li><strong>Judging:</strong> the named independent reviewer or panel, published scoring criteria, decision process, conflict policy, and tie-break procedure.</li>
-        <li><strong>Prize details:</strong> confirmation that the $6.66 USD award is funded, how and when it will be delivered, any claim deadline, and applicable tax responsibilities.</li>
-        <li><strong>Privacy and publicity:</strong> what submission information will be public, how entrant names are displayed, and how winner publicity is handled.</li>
-        <li><strong>Administration:</strong> rules for duplicate, incomplete, abusive, fabricated, or plagiarized entries; disqualification; and any permitted changes or cancellation.</li>
-      </ol>
-      <p>No purchase or entry fee is required. The prize will not be awarded solely because an entry is submitted. Until the complete official rules and independent reviewer details are published, this page functions as a public research challenge and scoreboard only; prize eligibility is not yet open.</p>
-    </section>
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Genesis Engineered Interpretation</strong> · Independent research by Wilbert Bouie Jr.</p>
+    <p><a href="https://yalltoo.com" target="_blank" rel="noopener noreferrer">YallToo.com</a> · <a href="mailto:Contact@yalltoo.com">Contact the research team</a></p>
+  </div>
+</footer>
 
-    <!-- HOW THE SCOREBOARD CHANGES -->
-    <section class="challenge-section">
-      <span class="section-kicker">HOW THE SCOREBOARD CHANGES</span>
-      <h2 id="process-heading">Submission is not the same as proof.</h2>
-      <ul class="flow-list">
-        <li class="flow-item">
-          <div class="flow-icon submit">1</div>
-          <div class="flow-body"><strong>Submission:</strong> an entry is received and listed publicly. This does not affect the streak.</div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-icon review">2</div>
-          <div class="flow-body"><strong>Under review:</strong> the argument is being examined against the published criteria.</div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-icon verified">3</div>
-          <div class="flow-body"><strong>Verified challenge:</strong> the independent reviewer publishes a reasoned finding that the evidence materially refutes a defined GEI claim.</div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-icon streak">4</div>
-          <div class="flow-body"><strong>Streak status:</strong> the streak remains active until a verified challenge is recorded. A verified refutation changes the scoreboard to "STREAK STOPPED" and the finding is published.</div>
-        </li>
-      </ul>
-      <p>The scoreboard will count only public GitHub issues with titles beginning <strong>[GEI CHALLENGE]</strong>. A verified result must be explicitly marked <strong>[GEI CHALLENGE] [VERIFIED]</strong> after the independent decision is published.</p>
-    </section>
-
-    <!-- CLOSING -->
-    <section class="challenge-closing">
-      <span class="section-kicker" id="closing-kicker">THE CHALLENGE STANDS</span>
-      <h2 id="closing-heading"></h2>
-      <p id="closing-message"></p>
-      <div class="challenge-actions" style="margin-top:20px">
-        <a class="btn-primary" href="https://github.com/jawa-dam/yalltoo/issues/new?template=gei-challenge-submission.yml" target="_blank" rel="noopener noreferrer" id="closing-cta"></a>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="challenge-footer">
-      <p>Genesis Engineered Interpretation · Independent research by Wilbert Bouie Jr.</p>
-      <p><a href="https://yalltoo.com" target="_blank" rel="noopener noreferrer">YallToo.com</a> · <a href="mailto:Contact@yalltoo.com">Contact the research team</a></p>
-    </footer>
-
-  </div><!-- end expandable-content -->
-</main>
 <script>
 (function(){
   "use strict";
 
   /* ==========================================================
-     RANDOMIZED WORDING ARRAYS
-     Facts (prize amount, counts, rules, safeguards) are NEVER randomized.
-     Only presentation phrasing varies.
+     SMOOTH SCROLL FOR IN-PAGE LINKS
      ========================================================== */
-
-  var introMessages = [
-    "Think GEI has it wrong? Here's your opportunity to demonstrate why.",
-    "A research interpretation should withstand serious examination. Put this one to the test.",
-    "Bring your strongest evidence. The challenge is open.",
-    "Don't simply disagree. Investigate, document, and demonstrate.",
-    "Wilbert says his Genesis Engineered Interpretation has stood since 2024. Can you find a specific, demonstrable flaw and stop the streak?",
-    "An interpretation that can't survive scrutiny doesn't deserve to stand. Test this one.",
-    "The claim is specific. The evidence must be too. Show where GEI breaks down.",
-    "Since 2024, no one has produced a verified refutation. Your move."
-  ];
-
-  var revealButtonTexts = [
-    "REVEAL THE FULL CHALLENGE",
-    "OPEN THE RESEARCH",
-    "SHOW ME THE EVIDENCE",
-    "LET'S SEE THE DETAILS",
-    "UNLOCK THE FULL CHALLENGE",
-    "EXPLORE THE CHALLENGE",
-    "SEE THE SCOREBOARD & RULES",
-    "VIEW THE FULL RESEARCH CHALLENGE"
-  ];
-
-  var collapseButtonTexts = [
-    "COLLAPSE THE DETAILS",
-    "CLOSE THE RESEARCH",
-    "SHOW LESS",
-    "HIDE THE DETAILS",
-    "FOLD IT BACK UP"
-  ];
-
-  var scoreboardExplainers = [
-    "Every submission is logged publicly. Verified challenges are counted separately — only after an independent review confirms that a specific GEI claim has been materially refuted.",
-    "The scoreboard tracks two things: how many challenges have been submitted, and how many have survived independent review. A submission alone does not change the streak.",
-    "Submissions land on the public ledger the moment they arrive. But the streak changes only when an independent reviewer confirms a verified refutation — not before.",
-    "Public submissions are listed as they come in. Verified challenges require an independent review with published reasoning. The two numbers tell different stories."
-  ];
-
-  var claimsIntros = [
-    "GEI is Wilbert Bouie Jr.'s independent research framework proposing a hydraulic-engineering reading of Genesis 1–6. The challenge invites rigorous examination of its textual, linguistic, and engineering claims.",
-    "Genesis Engineered Interpretation proposes that Genesis 1–6 describes a hydraulic-engineering system. Each claim below is a specific part of that framework — and each one is open to challenge.",
-    "Wilbert Bouie Jr. reads Genesis 1–6 as describing an engineered water-management system. Below are the specific claims. Pick one. Bring the evidence.",
-    "GEI reinterprets Genesis 1–6 through the lens of hydraulic engineering. These are the claims on the table — examine any one with documented, checkable evidence."
-  ];
-
-  var qualifyIntros = [
-    "Bring evidence, not just disagreement. Here is what a qualifying submission looks like.",
-    "A strong challenge is specific, sourced, and addresses the strongest counterargument. Follow these steps.",
-    "Opinion doesn't qualify. Documented, verifiable evidence does. Here's the standard.",
-    "The bar is clear: identify a specific claim, cite real evidence, and explain why it matters."
-  ];
-
-  var submitEncouragements = [
-    "MAKE YOUR CASE ↗",
-    "SUBMIT YOUR EVIDENCE ↗",
-    "PRESENT YOUR ARGUMENT ↗",
-    "CHALLENGE A CLAIM ↗",
-    "BRING THE EVIDENCE ↗"
-  ];
-
-  var closingHeadings = [
-    "Disagree? Excellent. Bring the evidence.",
-    "The interpretation stands — until someone proves otherwise.",
-    "Think you can stop the streak? The ledger is open.",
-    "Convinced GEI has a flaw? Document it. Submit it. Let the evidence speak.",
-    "Still standing since 2024. Your move."
-  ];
-
-  var closingMessages = [
-    "Don't just disagree — investigate. Don't just assert — document. The challenge is public, the standards are clear, and the scoreboard is live.",
-    "Every serious inquiry deserves a serious response. If you have the evidence, the process is here. Submit your challenge and let the public record speak.",
-    "The strongest way to disagree is with evidence that can't be ignored. If GEI has a demonstrable flaw, this is where you prove it.",
-    "Research doesn't advance through opinion alone. It advances through documented, verifiable findings. The submission process is open."
-  ];
-
-  var closingCTAs = [
-    "SUBMIT YOUR CHALLENGE ↗",
-    "ENTER THE CHALLENGE ↗",
-    "MAKE YOUR CASE ↗",
-    "BRING YOUR EVIDENCE ↗"
-  ];
-
-  var closingKickers = [
-    "THE CHALLENGE STANDS",
-    "YOUR MOVE",
-    "THE INVITATION IS OPEN",
-    "SINCE 2024"
-  ];
-
-  function pick(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
-  }
-
-  /* ==========================================================
-     RANDOMIZED COLOR THEMES
-     Each theme shifts the atmosphere while keeping all text
-     crisp and readable. Text colors stay fixed (#e8edf3 body,
-     #b0bdcf secondary, #7a8da4 muted) — only backgrounds,
-     accents, and ambient tones change.
-     ========================================================== */
-  var colorThemes = [
-    {
-      name: "deep-ocean",
-      bg: "#06070d",
-      surface: "#0d1117",
-      accent: "#2fd2ff",
-      accentRgb: "47,210,255",
-      secondary: "#3d3dea",
-      secondaryRgb: "61,61,234",
-      ambient1: "rgba(47,210,255,.08)",
-      ambient2: "rgba(61,61,234,.06)",
-      ambient3: "rgba(243,16,186,.05)",
-      ambient4: "rgba(47,210,255,.06)",
-      heroGrad1: "rgba(47,210,255,.12)",
-      heroGrad2: "rgba(243,16,186,.07)",
-      heroGrad3: "rgba(61,61,234,.06)",
-      gridColor: "rgba(47,210,255,.04)",
-      prizeGrad: "linear-gradient(135deg,#3d3dea,#2fd2ff)",
-      heroBorder: "rgba(47,210,255,.18)"
-    },
-    {
-      name: "midnight-indigo",
-      bg: "#080811",
-      surface: "#0e0e1a",
-      accent: "#7b7bff",
-      accentRgb: "123,123,255",
-      secondary: "#3d3dea",
-      secondaryRgb: "61,61,234",
-      ambient1: "rgba(123,123,255,.08)",
-      ambient2: "rgba(61,61,234,.08)",
-      ambient3: "rgba(123,123,255,.04)",
-      ambient4: "rgba(157,100,255,.05)",
-      heroGrad1: "rgba(123,123,255,.1)",
-      heroGrad2: "rgba(157,100,255,.07)",
-      heroGrad3: "rgba(61,61,234,.08)",
-      gridColor: "rgba(123,123,255,.035)",
-      prizeGrad: "linear-gradient(135deg,#3d3dea,#7b7bff)",
-      heroBorder: "rgba(123,123,255,.16)"
-    },
-    {
-      name: "electric-rose",
-      bg: "#0a070b",
-      surface: "#12101a",
-      accent: "#f472b6",
-      accentRgb: "244,114,182",
-      secondary: "#f310ba",
-      secondaryRgb: "243,16,186",
-      ambient1: "rgba(244,114,182,.07)",
-      ambient2: "rgba(243,16,186,.06)",
-      ambient3: "rgba(255,157,242,.05)",
-      ambient4: "rgba(244,114,182,.05)",
-      heroGrad1: "rgba(244,114,182,.1)",
-      heroGrad2: "rgba(243,16,186,.08)",
-      heroGrad3: "rgba(157,100,255,.05)",
-      gridColor: "rgba(244,114,182,.03)",
-      prizeGrad: "linear-gradient(135deg,#f310ba,#f472b6)",
-      heroBorder: "rgba(244,114,182,.16)"
-    },
-    {
-      name: "arctic-teal",
-      bg: "#060b0d",
-      surface: "#0b1418",
-      accent: "#5eead4",
-      accentRgb: "94,234,212",
-      secondary: "#14b8a6",
-      secondaryRgb: "20,184,166",
-      ambient1: "rgba(94,234,212,.07)",
-      ambient2: "rgba(20,184,166,.06)",
-      ambient3: "rgba(47,210,255,.04)",
-      ambient4: "rgba(94,234,212,.05)",
-      heroGrad1: "rgba(94,234,212,.1)",
-      heroGrad2: "rgba(20,184,166,.06)",
-      heroGrad3: "rgba(47,210,255,.05)",
-      gridColor: "rgba(94,234,212,.035)",
-      prizeGrad: "linear-gradient(135deg,#14b8a6,#5eead4)",
-      heroBorder: "rgba(94,234,212,.16)"
-    },
-    {
-      name: "ultraviolet",
-      bg: "#09060e",
-      surface: "#110d1a",
-      accent: "#c084fc",
-      accentRgb: "192,132,252",
-      secondary: "#9333ea",
-      secondaryRgb: "147,51,234",
-      ambient1: "rgba(192,132,252,.07)",
-      ambient2: "rgba(147,51,234,.06)",
-      ambient3: "rgba(243,16,186,.04)",
-      ambient4: "rgba(192,132,252,.05)",
-      heroGrad1: "rgba(192,132,252,.1)",
-      heroGrad2: "rgba(147,51,234,.07)",
-      heroGrad3: "rgba(243,16,186,.05)",
-      gridColor: "rgba(192,132,252,.035)",
-      prizeGrad: "linear-gradient(135deg,#9333ea,#c084fc)",
-      heroBorder: "rgba(192,132,252,.16)"
-    },
-    {
-      name: "ember-gold",
-      bg: "#0b0806",
-      surface: "#151008",
-      accent: "#fbbf24",
-      accentRgb: "251,191,36",
-      secondary: "#f59e0b",
-      secondaryRgb: "245,158,11",
-      ambient1: "rgba(251,191,36,.06)",
-      ambient2: "rgba(245,158,11,.05)",
-      ambient3: "rgba(251,146,60,.04)",
-      ambient4: "rgba(251,191,36,.04)",
-      heroGrad1: "rgba(251,191,36,.09)",
-      heroGrad2: "rgba(245,158,11,.06)",
-      heroGrad3: "rgba(251,146,60,.04)",
-      gridColor: "rgba(251,191,36,.03)",
-      prizeGrad: "linear-gradient(135deg,#f59e0b,#fbbf24)",
-      heroBorder: "rgba(251,191,36,.15)"
-    }
-  ];
-
-  var theme = pick(colorThemes);
-  var r = document.documentElement.style;
-
-  r.setProperty("--yt-bg", theme.bg);
-  r.setProperty("--yt-surface-solid", theme.surface);
-  r.setProperty("--yt-cyan", theme.accent);
-  r.setProperty("--yt-line", "rgba(" + theme.accentRgb + ",.12)");
-  r.setProperty("--yt-gradient", "linear-gradient(135deg," + theme.accent + " 0%," + theme.secondary + " 50%,#f310ba 100%)");
-
-  document.body.style.background = theme.bg;
-  document.querySelector("meta[name='theme-color']").setAttribute("content", theme.bg);
-
-  var gridEl = document.body;
-  gridEl.style.setProperty("--grid-color", theme.gridColor);
-
-  var hero = document.querySelector(".challenge-hero");
-  hero.style.background =
-    "radial-gradient(ellipse at 20% 10%," + theme.heroGrad1 + ",transparent 50%)," +
-    "radial-gradient(ellipse at 80% 90%," + theme.heroGrad2 + ",transparent 45%)," +
-    "radial-gradient(ellipse at 50% 50%," + theme.heroGrad3 + ",transparent 60%)," +
-    theme.surface;
-  hero.style.borderColor = theme.heroBorder;
-
-  var waterEl = document.querySelector(".water-ambient");
-  if (waterEl) {
-    waterEl.style.setProperty("--amb1", theme.ambient1);
-    waterEl.style.setProperty("--amb2", theme.ambient2);
-    waterEl.style.setProperty("--amb3", theme.ambient3);
-    waterEl.style.setProperty("--amb4", theme.ambient4);
-  }
-
-  var accentEls = document.querySelectorAll(
-    ".section-kicker, .challenge-kicker, .live-tag, .claim-item .claim-tag"
-  );
-  for (var i = 0; i < accentEls.length; i++) {
-    accentEls[i].style.color = theme.accent;
-  }
-
-  document.querySelector(".challenge-kicker").style.background = "rgba(" + theme.accentRgb + ",.08)";
-  document.querySelector(".challenge-kicker").style.borderColor = "rgba(" + theme.accentRgb + ",.15)";
-
-  var streakBadge = document.getElementById("hero-streak");
-  streakBadge.style.borderColor = "rgba(" + theme.accentRgb + ",.2)";
-  streakBadge.style.background = "rgba(" + theme.accentRgb + ",.06)";
-  streakBadge.style.color = theme.accent;
-  var dot = streakBadge.querySelector(".dot");
-  if (dot) {
-    dot.style.background = theme.accent;
-    dot.style.boxShadow = "0 0 0 4px rgba(" + theme.accentRgb + ",.15),0 0 12px rgba(" + theme.accentRgb + ",.3)";
-  }
-
-  /* ==========================================================
-     RANDOMIZED PRIZE EFFECT
-     Each visit gets a different looping animation on the $6.66
-     badge to make it feel alive and engaging.
-     ========================================================== */
-  var prizeEffects = [
-    "prize-fx-pulse",
-    "prize-fx-shimmer",
-    "prize-fx-float",
-    "prize-fx-breathe",
-    "prize-fx-hueshift",
-    "prize-fx-combo-a",
-    "prize-fx-combo-b"
-  ];
-
-  var prizeBadge = document.getElementById("prize-badge");
-  prizeBadge.style.setProperty("--prize-bg", theme.prizeGrad);
-  prizeBadge.style.setProperty("--prize-glow", "rgba(" + theme.accentRgb + ",.25)");
-  prizeBadge.style.setProperty("--prize-glow-outer", "rgba(" + theme.accentRgb + ",.1)");
-  prizeBadge.style.setProperty("--prize-glow-far", "rgba(" + theme.accentRgb + ",.06)");
-  prizeBadge.classList.add(pick(prizeEffects));
-
-  /* ==========================================================
-     APPLY RANDOMIZED TEXT
-     ========================================================== */
-  document.getElementById("hero-intro").textContent = pick(introMessages);
-  document.getElementById("scoreboard-explainer").textContent = pick(scoreboardExplainers);
-  document.getElementById("claims-intro").textContent = pick(claimsIntros);
-  document.getElementById("qualify-intro").textContent = pick(qualifyIntros);
-  document.getElementById("submit-action-text").textContent = pick(submitEncouragements);
-  document.getElementById("closing-heading").textContent = pick(closingHeadings);
-  document.getElementById("closing-message").textContent = pick(closingMessages);
-  document.getElementById("closing-cta").textContent = pick(closingCTAs);
-  document.getElementById("closing-kicker").textContent = pick(closingKickers);
-
-  var revealText = pick(revealButtonTexts);
-  var collapseText = pick(collapseButtonTexts);
-  var revealBtn = document.getElementById("reveal-btn");
-  revealBtn.textContent = revealText;
-
-  /* ==========================================================
-     SHOW MORE / SHOW LESS — SINGLE ACCORDION
-     ========================================================== */
-  var expandable = document.getElementById("expandable-area");
-  var isExpanded = false;
-
-  revealBtn.addEventListener("click", function() {
-    isExpanded = !isExpanded;
-
-    if (isExpanded) {
-      expandable.classList.add("expanded");
-      revealBtn.textContent = collapseText;
-      revealBtn.setAttribute("aria-expanded", "true");
-
-      requestAnimationFrame(function() {
-        var scoreboard = document.getElementById("scoreboard");
-        if (scoreboard) {
-          var rect = scoreboard.getBoundingClientRect();
-          var scrollTarget = window.pageYOffset + rect.top - 20;
-          window.scrollTo({ top: scrollTarget, behavior: "smooth" });
-        }
-      });
-    } else {
-      var heroRect = document.querySelector(".challenge-hero").getBoundingClientRect();
-      var revealRect = revealBtn.getBoundingClientRect();
-
-      expandable.classList.remove("expanded");
-      revealBtn.textContent = revealText;
-      revealBtn.setAttribute("aria-expanded", "false");
-
-      if (heroRect.bottom < 0) {
-        var btnTop = window.pageYOffset + revealRect.top;
-        var target = btnTop - window.innerHeight * 0.4;
-        window.scrollTo({ top: Math.max(0, target), behavior: "smooth" });
-      }
-    }
-  });
-
-  /* Scoreboard link in hero opens content if collapsed */
-  document.getElementById("scroll-to-scoreboard").addEventListener("click", function(e) {
-    e.preventDefault();
-    if (!isExpanded) {
-      revealBtn.click();
-    } else {
-      var scoreboard = document.getElementById("scoreboard");
-      if (scoreboard) {
-        scoreboard.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener("click",function(e){
+      var id=this.getAttribute("href");
+      if(id==="#"||id.length<2)return;
+      var target=document.querySelector(id);
+      if(!target)return;
+      e.preventDefault();
+      var offset=80;
+      var y=target.getBoundingClientRect().top+window.pageYOffset-offset;
+      window.scrollTo({top:y,behavior:"smooth"});
+    });
   });
 
   /* ==========================================================
      GITHUB API — LIVE SCOREBOARD
      ========================================================== */
-  (async function() {
-    var repo = "jawa-dam/yalltoo";
-    var countEl = document.getElementById("submission-count");
-    var verifiedEl = document.getElementById("verified-count");
-    var streakEl = document.getElementById("streak-count");
-    var detailEl = document.getElementById("streak-detail");
-    var heroText = document.getElementById("hero-streak-text");
-    var updatedEl = document.getElementById("score-updated");
-    var errorEl = document.getElementById("score-error");
+  (async function(){
+    var repo="jawa-dam/yalltoo";
+    var countEl=document.getElementById("submission-count");
+    var verifiedEl=document.getElementById("verified-count");
+    var streakEl=document.getElementById("streak-status");
+    var detailEl=document.getElementById("streak-detail");
+    var updatedEl=document.getElementById("score-updated");
+    var errorEl=document.getElementById("score-error");
+    var streakCard=document.querySelector(".stat-card--streak");
 
-    try {
-      var all = [];
-      var page = 1;
-      while (page <= 10) {
-        var response = await fetch(
-          "https://api.github.com/repos/" + repo + "/issues?state=all&per_page=100&page=" + page,
-          { headers: { Accept: "application/vnd.github+json" } }
+    try{
+      var all=[];
+      var page=1;
+      while(page<=10){
+        var resp=await fetch(
+          "https://api.github.com/repos/"+repo+"/issues?state=all&per_page=100&page="+page,
+          {headers:{Accept:"application/vnd.github+json"}}
         );
-        if (!response.ok) throw new Error("GitHub API returned " + response.status);
-        var rows = await response.json();
-        var issues = rows.filter(function(x) {
-          return !x.pull_request && /^\[GEI CHALLENGE\]/i.test(x.title || "");
+        if(!resp.ok)throw new Error("GitHub API returned "+resp.status);
+        var rows=await resp.json();
+        var issues=rows.filter(function(x){
+          return !x.pull_request&&/^\[GEI CHALLENGE\]/i.test(x.title||"");
         });
-        all = all.concat(issues);
-        if (rows.length < 100) break;
+        all=all.concat(issues);
+        if(rows.length<100)break;
         page++;
       }
 
-      var verified = all.filter(function(x) {
-        return /^\[GEI CHALLENGE\]\s*\[VERIFIED\]/i.test(x.title || "");
+      var verified=all.filter(function(x){
+        return /^\[GEI CHALLENGE\]\s*\[VERIFIED\]/i.test(x.title||"");
       });
-      var active = verified.length === 0;
+      var alive=verified.length===0;
 
-      countEl.textContent = String(all.length);
-      verifiedEl.textContent = String(verified.length);
-      streakEl.textContent = active ? "STILL ALIVE" : "STOPPED";
-      detailEl.textContent = active
-        ? "No verified refutation recorded"
-        : "At least one GEI claim has been verified as refuted";
-      heroText.textContent = active ? "GEI STREAK: STILL ALIVE" : "GEI STREAK: STOPPED";
+      countEl.textContent=String(all.length);
+      verifiedEl.textContent=String(verified.length);
 
-      if (!active) {
-        var heroStreak = document.getElementById("hero-streak");
-        heroStreak.style.background = "rgba(180,35,24,.1)";
-        heroStreak.style.borderColor = "rgba(180,35,24,.3)";
-        heroStreak.style.color = "#f87171";
-        streakEl.style.color = "#f87171";
-        var streakVal = document.querySelector(".streak-card .score-value");
-        if (streakVal) {
-          streakVal.style.color = "#f87171";
-          streakVal.textContent = "STOPPED";
+      if(alive){
+        streakEl.textContent="STREAK ALIVE";
+        streakEl.className="stat-value stat-value--streak";
+        detailEl.textContent="No verified refutation recorded";
+      }else{
+        streakEl.textContent="STREAK STOPPED";
+        streakEl.className="stat-value stat-value--stopped";
+        detailEl.textContent="At least one GEI claim has been verified as refuted";
+        if(streakCard){
+          streakCard.style.borderColor="rgba(220,38,38,.2)";
+          streakCard.style.background="linear-gradient(180deg,rgba(220,38,38,.03),var(--white))";
         }
       }
 
-      updatedEl.textContent = "Last checked: " + new Date().toLocaleString() + " · Source: public GitHub issue ledger";
-    } catch (error) {
-      countEl.textContent = "—";
-      verifiedEl.textContent = "—";
-      streakEl.textContent = "UNAVAILABLE";
-      detailEl.textContent = "Live status could not be confirmed";
-      updatedEl.textContent = "The scoreboard could not retrieve the live ledger.";
-      errorEl.hidden = false;
+      updatedEl.textContent="Last checked: "+new Date().toLocaleString()+" · Source: public GitHub issue ledger";
+    }catch(err){
+      countEl.textContent="—";
+      verifiedEl.textContent="—";
+      streakEl.textContent="UNAVAILABLE";
+      streakEl.className="stat-value";
+      streakEl.style.color="var(--text-muted)";
+      streakEl.style.fontSize="1rem";
+      detailEl.textContent="Live status could not be confirmed";
+      updatedEl.textContent="The scoreboard could not retrieve the live ledger.";
+      errorEl.hidden=false;
     }
   })();
+
+  /* ==========================================================
+     SUBTLE ENTRANCE ANIMATIONS
+     Only apply to elements below the initial viewport.
+     ========================================================== */
+  if(window.matchMedia&&!window.matchMedia("(prefers-reduced-motion:reduce)").matches){
+    var viewH=window.innerHeight;
+    var animEls=document.querySelectorAll(".stat-card,.claim-card,.step-item,.review-item,.rule-item,.process-step");
+
+    var observer=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    },{threshold:0.05,rootMargin:"0px 0px -20px 0px"});
+
+    animEls.forEach(function(el){
+      var rect=el.getBoundingClientRect();
+      if(rect.top>viewH){
+        el.classList.add("anim-ready");
+        observer.observe(el);
+      }
+    });
+
+    setTimeout(function(){
+      animEls.forEach(function(el){
+        el.classList.add("revealed");
+      });
+    },3000);
+  }
 })();
 </script>
 </body>
